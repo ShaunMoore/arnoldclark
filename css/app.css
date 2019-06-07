@@ -1,0 +1,165 @@
+*:focus {
+	outline: none;
+}
+
+textarea:focus, input:focus{
+	outline: none;
+}
+
+input,
+select{
+	width: 100%;
+	padding: 7px;
+	margin-bottom: 20px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+span{
+	font-size: 12px;
+}
+
+.wrapper{
+	display: block;
+	margin-top: 20px;
+}
+
+.fixed-sidebar{
+	position: fixed;
+	width: 25%;
+	top: 20px;
+}
+
+.btn{
+	width: 100%;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1;
+}
+
+#cars{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+a.car,
+.car{
+	padding-bottom: 15px;
+	border: 1px solid #fff;
+	color: #2d3737;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.car img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.car h2,
+.car h3{
+	margin: 0;
+}
+
+.is-hovering .car{
+	opacity: 0.3;
+}
+
+.is-hovering .car:hover{
+	opacity: 1;
+	box-shadow: 0px 1px 37px 1px #ccc;
+	border: 1px solid #ccc;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.car-img-container{
+	display: block;
+	height: 200px;
+	margin-top: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.car-desc-container{
+	display: block;
+	padding: 15px 0;
+	height: 150px;
+}
+
+.payments-schedule{
+	position: relative;
+	display: none;
+	width: 100%;
+	padding: 15px 0;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.payments-schedule-date{
+	padding: 15px 0;
+	border: 1px solid #ccc;
+}
+
+#loading{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	background-color: #2d3737;
+}
+
+#loading.active{
+	display: block;
+	opacity: 0.6;
+}
+
+#loading::after{
+	position: fixed;
+	content: "";
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-image: url('../images/tail-spin.svg');
+}
+
+.error{
+	display: block;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: pink;
+	color: red;
+}

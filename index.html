@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/app.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	</head>
+	<body>
+		<div id="loading"></div>
+		<div class="container">
+			<div class="wrapper">
+				<div class="col-sm-3">
+					<div class="fixed-sidebar">
+						<div class="col-sm-9">
+							<div class="row">
+								<label>Vehicle Price</label><br>
+								<input type="text" name="vehiclePrice" placeholder="Vehicle Price"><br>
+							</div>
+							<div class="row">
+								<label>Deposit Amount</label><br>
+								<input type="text" name="depositAmount" placeholder="Deposit Amount"><br>
+							</div>
+							<div class="row">
+								<label>Delivery Date</label><br>
+								<input id="datepicker" type="text" name="deliveryDate" placeholder="Delivery Date"><br>
+							</div>
+							<div class="row">
+								<label>Finance Option</label><br>
+								<select name="financeOption">
+									<option>Select Finance Option...</option>
+									<option value="oneYear">One Year</option>
+									<option value="twoYear">Two Year</option>
+									<option value="threeYear">Three Year</option>
+								</select><br>
+							</div>
+							<div class="row">
+								<a href="#" id="calculate" class="btn btn-primary">Calculate</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div id="errors"></div>
+					<div id="payments-schedule" class="payments-schedule">
+						<div id="payments-schedule-dates" class="payments-schedule-dates"></div>
+						<div class="col-sm-4 text-center" id="monthly-payment-plus-arrangement-fee">
+							<h1></h1>
+							<span>Standard + Arrangement Fee</span>
+						</div>
+						<div class="col-sm-4 text-center" id="standard-monthly-payment">
+							<h1></h1>
+							<span>Standard Monthly Payment</span>
+						</div>
+						<div class="col-sm-4 text-center" id="monthly-payment-plus-completion-fee">
+							<h1></h1>
+							<span>Standard + Completion Fee</span>
+						</div>
+					</div>
+					<div id="cars"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://momentjs.com/downloads/moment.min.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="./js/index.js"></script>
+
+	</body>
+</html>
